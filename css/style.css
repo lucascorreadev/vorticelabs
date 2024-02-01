@@ -17,6 +17,7 @@
 .scrolling-text {
     display: flex;
     color: white;
+    font: 500;
 }
 
 .scrolling-text-item {
@@ -27,10 +28,6 @@
     animation: var(--direction) var(--marquee-speed) linear infinite;
 }
 
-.scrolling-text-container:hover .scrolling-text-inner>div {
-    animation-play-state: paused;
-}
-
 @keyframes scroll-left {
     0% {
         transform: translateX(0%);
@@ -38,15 +35,5 @@
 
     100% {
         transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll-right {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0%);
     }
 }
