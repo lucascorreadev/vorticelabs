@@ -1,211 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/output.css">
-    <title>Vórtice Labs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/output.css">
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <title>Vórtice Labs</title>
 </head>
+
 <body class="overflow-x-hidden">
-    <header class="absolute h-[5.25rem] w-screen">
-      <div class="flex justify-between px-12 py-6">
-        <img src="./images/logo-vortice.svg" alt="">
-        <div class="hidden md:flex">
-         <button class="text-white bg-[#8001FF] w-[12rem] h-[3rem] rounded-lg">Entrar em contato</button>
+  <header class="absolute h-[5.25rem] w-screen">
+    <div class="flex justify-between px-12 py-6">
+      <img src="./images/logo-vortice.svg" alt="">
+      <div class="hidden md:flex">
+        <button class="text-white bg-[#8001FF] w-[12rem] h-[3rem] rounded-lg" onclick="showDialog()">
+          Entrar em contato
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="homepage section" class="bg-gradient-to-br from-black via-[black] to-[#211631] h-screen">
+    <div
+      class="flex flex-col items-center justify-center h-screen bg-cover bg-right bg-[url('../src/images/background-vortice.png')] bg-blend-overlay bg-black/85">
+      <h1 class="pt-16 text-3xl font-bold text-left text-white md:text-5xl lg:text-7xl">Transformando visões </h1>
+      <h1 class="font-bold text-[#8001FF] text-left text-3xl md:text-5xl lg:text-7xl">em realidade digital</h1>
+      <p class="px-12 mt-8 text-lg text-left text-white lg:px-[22rem] pt-3 ">Moldamos o online para refletir o
+        extraordinário que há no seu negócio. Desenvolvemos não apenas websites, e sim portais de oportunidades, onde
+        cada clique é uma jornada e cada página conta uma história única. Sua presença online merece ser inesquecível e
+        vamos construí-la juntos.</p>
+      <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-10 text-xl" onclick="showDialog()">Entrar em contato</button>
+      <dotlottie-player class="lg:pt-8" src="https://lottie.host/d87caa51-c40d-4198-b12a-ff6f588e1fb9/gYXWEzkOsN.json"
+        background="transparent" speed="1" style="width: 26px; height: 96px;" loop autoplay></dotlottie-player>
+    </div>
+  </section>
+
+  <section id="info section" class="bg-gradient-to-tr from-black via-[black] to-[#211631] w-screen lg:h-[56rem]">
+    <div class="">
+      <div class="relative scrolling-text-container -top-10">
+        <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left">
+          <div class="scrolling-text">
+            <div class="scrolling-text-item">Desenvolvimento de Sites</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Landing Pages</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Páginas de Vendas</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Sites Institucionais e Pessoais</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Social Media</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">E-Commerce</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+          <div class="scrolling-text">
+            <div class="scrolling-text-item">Desenvolvimento de Sites</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Landing Pages</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Páginas de Vendas</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Sites Institucionais e Pessoais</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">Social Media</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="scrolling-text-item">E-Commerce</div>
+            <div class="pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+                <path
+                  d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    
-      <section id="homepage section" class="bg-gradient-to-br from-black via-[black] to-[#211631] h-screen">
-        <div class="flex flex-col items-center justify-center h-screen bg-cover bg-right bg-[url('../src/images/background-vortice.png')] bg-blend-overlay bg-black/85">
-            <h1 class="text-3xl font-bold text-left text-white md:text-5xl lg:text-7xl">Transformando visões </h1>
-            <h1 class="font-bold text-[#8001FF] text-left text-3xl md:text-5xl lg:text-7xl">em realidade digital</h1>
-            <p class="px-12 mt-10 text-lg text-left text-white lg:px-[22rem] pt-4 ">Moldamos o online para refletir o extraordinário que há no seu negócio. Desenvolvemos não apenas websites, e sim portais de oportunidades, onde cada clique é uma jornada e cada página conta uma história única. Sua presença online merece ser inesquecível e vamos construí-la juntos.</p>
-            <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-10 text-xl">Entrar em contato</button>
+      <div class="flex flex-col items-center justify-center">
+        <div class="mt-3">
+          <h1 class="px-8 text-3xl font-bold text-left text-white md:text-center lg:text-5xl lg:text-center">
+            Revolucione sua presença online
+          </h1>
+          <p class="px-8 pt-4 text-base text-left text-white font-extralight md:text-center lg:text-xl">
+            Descubra a excelência em cada pixel. Explore nossos principais serviços que transformam a presença digital e
+            destacam sua marca no vasto cenário online.
+          </p>
         </div>
-      </section>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="grid grid-cols-1 px-3 mt-5 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/palette.svg" alt="" class="absolute mt-2 ml-[6.5rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Desenvolvimento personalizado</h2>
+              <p class="text-center">Websites exclusivos que refletem a singularidade da sua marca. Do código ao design,
+                criamos soluções feitas especialmente para você.</p>
+            </div>
+          </div>
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/chart-icon.svg" alt="" class="absolute ml-[6.5rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Páginas de alto impacto</h2>
+              <p class="text-center"> Transforme visitantes em clientes. Nossas landing pages são otimizadas para
+                engajamento, convertendo cliques em resultados tangíveis.</p>
+            </div>
+          </div>
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/smile-icon.svg" alt="" class="absolute ml-[6.5rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Experiência do Usuário (UX)</h2>
+              <p class="text-center">Vamos além do design. Focamos na experiência do usuário para garantir que cada
+                interação seja intuitiva e memorável.</p>
+            </div>
+          </div>
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/target-icon.svg" alt="" class="absolute ml-[6.5rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Estratégias de Presença Online</h2>
+              <p class="text-center">Consultoria especializada para posicionar sua marca no topo. Maximizamos sua
+                visibilidade e impacto no mundo digital.</p>
+            </div>
+          </div>
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/mobile-icon.svg" alt="" class="absolute ml-[6.5rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Otimização para Dispositivos Móveis</h2>
+              <p class="text-center">Seu site, sempre perfeito. Proporcionamos uma experiência envolvente,
+                independentemente do dispositivo.</p>
+            </div>
+          </div>
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+            <img src="./images/lightbulb-icon.svg" alt="" class="absolute mt-1 ml-[7rem]">
+            <div class="flex flex-col items-center justify-center">
+              <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
+              </div>
+              <h2 class="text-2xl font-bold text-center">Inovação Constante</h2>
+              <p class="text-center">Sempre à frente: exploramos novas tecnologias para inovar constantemente e manter
+                seu projeto na vanguarda digital.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-6">
+        <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-6 text-xl">Entrar em contato</button>
+      </div>
+  </section>
 
-      <section id="info section" class="bg-gradient-to-tr from-black via-[black] to-[#211631] w-screen lg:h-[56rem]">
-        <div class="">
-          <div class="relative scrolling-text-container -top-10">
-              <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction:scroll-left">
-                <div class="scrolling-text">
-                  <div class="scrolling-text-item">Desenvolvimento de Sites</div>
-                  <div class="pt-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                          <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                        </svg>
-                  </div>
-                  <div class="scrolling-text-item">Landing Pages</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Páginas de Vendas</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Sites Institucionais e Pessoais</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Social Media</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">E-Commerce</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="scrolling-text">
-                  <div class="scrolling-text-item">Desenvolvimento de Sites</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Landing Pages</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Páginas de Vendas</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Sites Institucionais e Pessoais</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">Social Media</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                  <div class="scrolling-text-item">E-Commerce</div>
-                  <div class="pt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-                      <path d="M2.26562 0.980469H4.25L3.63281 3.33203L5.39844 1.66797L6.3125 3.38672L3.92969 3.99609L6.3125 4.67578L5.28125 6.37109L3.57812 4.67578L4.17969 7.01953H2.26562L2.86719 4.67578L1.125 6.37109L0.0859375 4.67578L2.47656 3.99609L0.0859375 3.33203L1.125 1.58984L2.86719 3.33203L2.26562 0.980469Z" fill="white" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <div class="mt-3">
-            <h1 class="px-8 text-3xl font-bold text-left text-white md:text-center lg:text-5xl lg:text-center">
-              Revolucione sua presença online
-            </h1>
-            <p class="px-8 pt-4 text-base text-left text-white font-extralight md:text-center lg:text-xl">
-              Descubra a excelência em cada pixel. Explore nossos principais serviços que transformam a presença digital e destacam sua marca no vasto cenário online.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-center justify-center">
-          <div class="grid grid-cols-1 px-3 mt-5 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/palette.svg" alt="" class="absolute mt-2 ml-[6.5rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Desenvolvimento personalizado</h2>
-                <p class="text-center">Websites exclusivos que refletem a singularidade da sua marca. Do código ao design, criamos soluções feitas especialmente para você.</p>
-              </div>
-            </div>
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/chart-icon.svg" alt="" class="absolute ml-[6.5rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Páginas de alto impacto</h2>
-                <p class="text-center"> Transforme visitantes em clientes. Nossas landing pages são otimizadas para engajamento, convertendo cliques em resultados tangíveis.</p>
-              </div>
-            </div>
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/smile-icon.svg" alt="" class="absolute ml-[6.5rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Experiência do Usuário (UX)</h2>
-                <p class="text-center">Vamos além do design. Focamos na experiência do usuário para garantir que cada interação seja intuitiva e memorável.</p>
-              </div>
-            </div>
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/target-icon.svg" alt="" class="absolute ml-[6.5rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Estratégias de Presença Online</h2>
-                <p class="text-center">Consultoria especializada para posicionar sua marca no topo. Maximizamos sua visibilidade e impacto no mundo digital.</p>
-              </div>
-            </div>
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/mobile-icon.svg" alt="" class="absolute ml-[6.5rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Otimização para Dispositivos Móveis</h2>
-                <p class="text-center">Seu site, sempre perfeito. Proporcionamos uma experiência envolvente, independentemente do dispositivo.</p>
-              </div>
-            </div>
-            <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
-              <img src="./images/lightbulb-icon.svg" alt="" class="absolute mt-1 ml-[7rem]">
-              <div class="flex flex-col items-center justify-center">
-                <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg"></div>
-                <h2 class="text-2xl font-bold text-center">Inovação Constante</h2>
-                <p class="text-center">Sempre à frente: exploramos novas tecnologias para inovar constantemente e manter seu projeto na vanguarda digital.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center p-6">
-          <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-6 text-xl">Entrar em contato</button>
-        </div>
-      </section>
+  <section id="cta section" class="h-[40rem] bg-black pt-14">
+    <div class="flex-col items-center justify-center md:flex">
+      <h1 class="px-4 text-3xl font-bold text-left text-white">Explore o poder da transformação digital</h1>
+      <div class="lg:flex xl:px-40 lg:px-20 lg:flex-row-reverse">
+        <p class="px-4 text-lg text-left text-white lg:pt-12 font-extralight lg:text-xl">Dê vida às suas ideias com a
+          VórticeLabs.
+          Nossa paixão é criar experiências digitais que transcendem expectativas. Da concepção à realidade,
+          moldamos o futuro online, proporcionando soluções que capturam a essência da sua visão.
+          Vamos juntos além do convencional, rumo a um universo digital surpreendente.</p>
+        <img src="./images/code-background.png" alt="" class="p-4">
+      </div>
+    </div>
+  </section>
 
-      <section id="cta section" class="h-[40rem] bg-black pt-14">
-        <div class="flex-col items-center justify-center md:flex">
-          <h1 class="px-4 text-3xl font-bold text-left text-white">Explore o poder da transformação digital</h1>
-          <div class="lg:flex xl:px-40 lg:px-20 lg:flex-row-reverse">
-            <p class="px-4 text-lg text-left text-white lg:pt-12 font-extralight lg:text-xl">Dê vida às suas ideias com a VórticeLabs. 
-              Nossa paixão é criar experiências digitais que transcendem expectativas. Da concepção à realidade, 
-              moldamos o futuro online, proporcionando soluções que capturam a essência da sua visão. 
-              Vamos juntos além do convencional, rumo a um universo digital surpreendente.</p>
-            <img src="./images/code-background.png" alt="" class="p-4">
+  <footer
+    class="h-[30rem] flex items-center flex-col bg-gradient-to-b from-black via-black to-[#16101D] md:justify-around md:flex-row md:h-[15rem]">
+    <div class="flex flex-col items-center justify-center py-8">
+      <p class="pb-2 text-white">Para ter um produto referência no mercado</p>
+      <button class="h-[3rem] w-[12rem] rounded-lg bg-[#8001FF] text-white">Entrar em contato</button>
+    </div>
+    <div class="flex items-center justify-center py-12">
+      <img src="./images/vortice-logo-extend.png" alt="">
+    </div>
+    <div class="flex flex-col items-center justify-center py-4">
+      <h2 class="font-light text-white">Nossas redes sociais</h2>
+      <nav class="flex justify-between pt-2">
+        <button class="pr-3"><img src="./images/instagram-svgrepo-com.svg" alt="" width="24" height="24"></button>
+        <button class="pr-3"><img src="./images/facebook-svgrepo-com.svg" alt="" width="24" height="24"></button>
+        <button class="pr-3"><img src="./images/linkedin-svgrepo-com.svg" alt="" width="24" height="24"></button>
+        <button class="pr-3"><img src="./images/mail-open-minus-svgrepo-com.svg" alt="" width="24" height="24"></button>
+        <button><img src="./images/whatsapp-svgrepo-com.svg" alt="" width="24" height="24"></button>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="dialog"
+  class="fixed top-0 left-0 hidden w-screen h-screen py-1 transition-opacity duration-500 bg-black opacity-0 lg:py-20">
+    <div class="flex flex-col items-center w-10/12 h-[18rem] lg:h-[34rem] mx-auto bg-white rounded shadow-md lg:w-4/6 lg:flex-wrap">
+      <div
+        class="flex lg:items-start lg:h-full h-[16rem] gap-3 w-full lg:w-1/2 flex-col bg-gradient-to-tr rounded from-[#a54cff] via-[#8001FF] to-[#8001FF] px-6 lg:p-10 xl:pt-32 lg:pt-26">
+        <div class="flex justify-end w-full pt-2 lg:invisible">
+          <button onclick="hideDialog()">✖</button>
+        </div>
+        <h1 class="text-xl font-bold text-white sm:text-2xl lg:text-4xl">
+          Vamos conversar! <br />
+          Nos fale um pouco sobre seu projeto
+        </h1>
+        <div class="flex">
+          <p class="text-white">Vamos transformar sua ideia em realidade!</p>
+          <dotlottie-player class="relative pl-3 -top-10"
+            src="https://lottie.host/b8ec93ea-5169-4feb-966c-6e9d83baa4d2/C0yVF3zdo7.json" background="transparent"
+            speed="1" style="width: 60px; height: 90px;" loop autoplay></dotlottie-player>
+        </div>
+        <button class="w-[15rem] h-12 rounded-lg bg-white flex items-center justify-center relative -top-10">
+          <div class="w-3/12">
+            <div class="bg-[#e6ccff] w-8 h-8 flex items-center justify-center rounded-lg">
+              <img src="./images/whatsapp-purple.svg" alt="" class="" width="22" height="22">
+            </div>
           </div>
+          <div class="relative -left-3">
+            <p class="text-sm font-bold text-left text-[#8001FF]">Chama a gente no zap!</p>
+            <p class="text-sm text-left font-extrlight">(31) 99999-9999</p>
+          </div>
+        </button>
+      </div>
+      <div class="flex flex-col h-screen px-6 py-2 bg-white rounded lg:py-16 lg:w-1/2">
+        <div class="relative flex justify-end invisible w-full -top-10 lg:visible">
+          <button onclick="hideDialog()">✖</button>
         </div>
-      </section>
-      
-      <footer class="h-[30rem] flex items-center flex-col bg-gradient-to-b from-black via-black to-[#16101D] md:justify-around md:flex-row md:h-[15rem]">
-        <div class="flex flex-col items-center justify-center py-8">
-          <p class="pb-2 text-white">Para ter um produto referência no mercado</p>
-          <button class="h-[3rem] w-[12rem] rounded-lg bg-[#8001FF] text-white">Entrar em contato</button>
+        <div class="relative flex items-center">
+          <h1 class="lg:text-3xl">Nos envie uma mensagem!</h1>
+          <dotlottie-player class="pl-3" src="https://lottie.host/76620405-33b6-46e6-98f9-5716b1aa200c/bgcywRq4po.json"
+            background="transparent" speed="1" style="width: 40px; height: 40px;" loop autoplay></dotlottie-player>
         </div>
-        <div class="flex items-center justify-center py-12">
-          <img src="./images/vortice-logo-extend.png" alt="">
-        </div>
-        <div class="flex flex-col items-center justify-center py-4">
-          <h2 class="font-light text-white">Nossas redes sociais</h2>
-          <nav class="flex justify-between pt-2">
-            <button class="pr-3"><img src="./images/instagram-svgrepo-com.svg" alt="" width="24" height="24"></button>
-            <button class="pr-3"><img src="./images/facebook-svgrepo-com.svg" alt="" width="24" height="24"></button>
-            <button class="pr-3"><img src="./images/linkedin-svgrepo-com.svg" alt="" width="24" height="24"></button>
-            <button class="pr-3"><img src="./images/mail-open-minus-svgrepo-com.svg" alt="" width="24" height="24"></button>
-            <button><img src="./images/whatsapp-svgrepo-com.svg" alt="" width="24" height="24"></button>
-          </nav>
-        </div> 
-      </footer>
-  </body>
-  
+        <form action="" method="post" class="space-y-2 lg:pt-4">
+          <input type="text" placeholder="Nome" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
+          <input type="text" placeholder="Email" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
+          <input type="text" placeholder="Telefone celular"
+            class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
+          <textarea id="message" rows="6" style="resize: none"
+            class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" placeholder="Mensagem"></textarea>
+          <div class="flex justify-end">
+            <button class="h-[2.5rem] w-[12rem] rounded-lg bg-[#8001FF] text-white">Entrar em contato</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
 </html>
