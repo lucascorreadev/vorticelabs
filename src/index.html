@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/css/output.css">
   <script src="./script.js"></script>
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="stylesheet" href="/css/font.css">
   <title>Vórtice Labs</title>
 </head>
 
@@ -22,16 +23,17 @@
     </div>
   </header>
 
-  <section id="homepage section" class="bg-gradient-to-br from-black via-[black] to-[#211631] h-screen">
+  <section id="homepage section" class="bg-gradient-to-br from-black via-[black] to-[#211631] h-[48rem] lg:h-screen">
     <div
-      class="flex flex-col items-center justify-center h-screen bg-cover bg-right bg-[url('../src/images/background-vortice.png')] bg-blend-overlay bg-black/85">
-      <h1 class="pt-16 text-3xl font-bold text-left text-white md:text-5xl lg:text-7xl">Transformando visões </h1>
-      <h1 class="font-bold text-[#8001FF] text-left text-3xl md:text-5xl lg:text-7xl">em realidade digital</h1>
+      class="flex flex-col items-center justify-center h-[48rem] lg:h-screen bg-cover bg-right bg-[url('../src/images/background-vortice.png')] bg-blend-overlay bg-black/85">
+      <h1 class="pt-16 text-2xl font-bold text-left text-white md:text-5xl lg:text-7xl">Transformando visões </h1>
+      <h1 class="font-bold text-[#8001FF] text-left text-2xl md:text-5xl lg:text-7xl">em realidade digital</h1>
       <p class="px-12 mt-8 text-lg text-left text-white lg:px-[22rem] pt-3 ">Moldamos o online para refletir o
         extraordinário que há no seu negócio. Desenvolvemos não apenas websites, e sim portais de oportunidades, onde
         cada clique é uma jornada e cada página conta uma história única. Sua presença online merece ser inesquecível e
         vamos construí-la juntos.</p>
-      <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-10 text-xl" onclick="showDialog()">Entrar em contato</button>
+      <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-10 text-xl" onclick="showDialog()">Entrar
+        em contato</button>
       <dotlottie-player class="lg:pt-8" src="https://lottie.host/d87caa51-c40d-4198-b12a-ff6f588e1fb9/gYXWEzkOsN.json"
         background="transparent" speed="1" style="width: 26px; height: 96px;" loop autoplay></dotlottie-player>
     </div>
@@ -206,7 +208,7 @@
                 independentemente do dispositivo.</p>
             </div>
           </div>
-          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg">
+          <div class="text-white border-2 border-[#B486D0] h-[18rem] w-[21rem] p-6 rounded-lg appear">
             <img src="./images/lightbulb-icon.svg" alt="" class="absolute mt-1 ml-[7rem]">
             <div class="flex flex-col items-center justify-center">
               <div class="w-[3rem] h-[3rem] bg-[#8001FF33] rounded-br-3xl rounded-tl-3xl rounded-tr-lg rounded-bl-lg">
@@ -219,15 +221,17 @@
         </div>
       </div>
       <div class="flex items-center justify-center p-6">
-        <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-6 text-xl">Entrar em contato</button>
+        <button class="text-white bg-[#8001FF] w-[17rem] h-[3rem] rounded-lg mt-6 text-xl" onclick="showDialog()">Entrar
+          em contato</button>
       </div>
   </section>
 
-  <section id="cta section" class="h-[40rem] bg-black pt-14">
+  <section id="cta section" class="h-[40rem] w-screen bg-black pt-14">
     <div class="flex-col items-center justify-center md:flex">
       <h1 class="px-4 text-3xl font-bold text-left text-white">Explore o poder da transformação digital</h1>
       <div class="lg:flex xl:px-40 lg:px-20 lg:flex-row-reverse">
-        <p class="px-4 text-lg text-left text-white lg:pt-12 font-extralight lg:text-xl">Dê vida às suas ideias com a
+        <p class="pt-4 pl-4 pr-8 text-lg text-left text-white lg:pt-12 font-extralight lg:text-xl">Dê vida às suas
+          ideias com a
           VórticeLabs.
           Nossa paixão é criar experiências digitais que transcendem expectativas. Da concepção à realidade,
           moldamos o futuro online, proporcionando soluções que capturam a essência da sua visão.
@@ -238,10 +242,11 @@
   </section>
 
   <footer
-    class="h-[30rem] flex items-center flex-col bg-gradient-to-b from-black via-black to-[#16101D] md:justify-around md:flex-row md:h-[15rem]">
-    <div class="flex flex-col items-center justify-center py-8">
-      <p class="pb-2 text-white">Para ter um produto referência no mercado</p>
-      <button class="h-[3rem] w-[12rem] rounded-lg bg-[#8001FF] text-white">Entrar em contato</button>
+    class="h-[35rem] flex items-center flex-col bg-gradient-to-b from-black via-black to-[#16101D] md:justify-around md:flex-row md:h-[15rem]">
+    <div class="flex flex-col items-center justify-center py-12">
+      <p class="py-10 text-white md:py-4">Para ter um produto referência no mercado</p>
+      <button class="h-[3rem] w-[12rem] rounded-lg bg-[#8001FF] text-white" onclick="showDialog()">Entrar em
+        contato</button>
     </div>
     <div class="flex items-center justify-center py-12">
       <img src="./images/vortice-logo-extend.png" alt="">
@@ -259,8 +264,9 @@
   </footer>
 
   <div id="dialog"
-  class="fixed top-0 left-0 hidden w-screen h-screen py-1 transition-opacity duration-500 bg-black opacity-0 lg:py-20">
-    <div class="flex flex-col items-center w-10/12 h-[18rem] lg:h-[34rem] mx-auto bg-white rounded shadow-md lg:w-4/6 lg:flex-wrap">
+    class="fixed top-0 left-0 hidden w-screen h-screen py-10 transition-opacity duration-500 bg-black opacity-0 lg:py-20">
+    <div
+      class="flex flex-col items-center w-10/12 h-4/6 lg:h-[34rem] mx-auto bg-white rounded shadow-md lg:w-4/6 lg:flex-wrap">
       <div
         class="flex lg:items-start lg:h-full h-[16rem] gap-3 w-full lg:w-1/2 flex-col bg-gradient-to-tr rounded from-[#a54cff] via-[#8001FF] to-[#8001FF] px-6 lg:p-10 xl:pt-32 lg:pt-26">
         <div class="flex justify-end w-full pt-2 lg:invisible">
@@ -274,7 +280,7 @@
           <p class="text-white">Vamos transformar sua ideia em realidade!</p>
           <dotlottie-player class="relative pl-3 -top-10"
             src="https://lottie.host/b8ec93ea-5169-4feb-966c-6e9d83baa4d2/C0yVF3zdo7.json" background="transparent"
-            speed="1" style="width: 60px; height: 90px;" loop autoplay></dotlottie-player>
+            speed="1" style="width: 90px; height: 90px;" loop autoplay></dotlottie-player>
         </div>
         <button class="w-[15rem] h-12 rounded-lg bg-white flex items-center justify-center relative -top-10">
           <div class="w-3/12">
@@ -288,24 +294,23 @@
           </div>
         </button>
       </div>
-      <div class="flex flex-col h-screen px-6 py-2 bg-white rounded lg:py-16 lg:w-1/2">
-        <div class="relative flex justify-end invisible w-full -top-10 lg:visible">
+      <div class="flex flex-col h-screen px-6 py-2 bg-white rounded lg:w-1/2 lg:pt-8">
+        <div class="relative flex justify-end invisible w-full -top-4 lg:visible">
           <button onclick="hideDialog()">✖</button>
         </div>
         <div class="relative flex items-center">
           <h1 class="lg:text-3xl">Nos envie uma mensagem!</h1>
-          <dotlottie-player class="pl-3" src="https://lottie.host/76620405-33b6-46e6-98f9-5716b1aa200c/bgcywRq4po.json"
-            background="transparent" speed="1" style="width: 40px; height: 40px;" loop autoplay></dotlottie-player>
         </div>
-        <form action="" method="post" class="space-y-2 lg:pt-4">
+        <form action="" method="post" class="space-y-2 lg:pt-4 lg:space-y-4">
           <input type="text" placeholder="Nome" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
           <input type="text" placeholder="Email" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
           <input type="text" placeholder="Telefone celular"
             class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
-          <textarea id="message" rows="6" style="resize: none"
+          <textarea id="message" rows="5" style="resize: none"
             class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" placeholder="Mensagem"></textarea>
-          <div class="flex justify-end">
-            <button class="h-[2.5rem] w-[12rem] rounded-lg bg-[#8001FF] text-white">Entrar em contato</button>
+          <div class="flex justify-end pb-6 lg:pt-6">
+            <button class="h-[2.5rem] w-[12rem] rounded-lg bg-[#8001FF] text-white" onclick="showDialog()">
+              Entrar em contato</button>
           </div>
         </form>
       </div>
