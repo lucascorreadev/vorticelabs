@@ -971,6 +971,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1005,10 +1009,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-left {
@@ -1129,6 +1129,24 @@ video {
   100% {
     transform: translateX(-100%);
   }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    translate: -10vw;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+#animation-grid{
+  animation: appear 1ms ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
 }
 
 @media (min-width: 640px) {
