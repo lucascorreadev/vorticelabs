@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Animation Text */
+
+.scrolling-text-container {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.scrolling-text {
+    display: flex;
+    color: white;
+    font: 500;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -10vw;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+#animation-grid{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%; 
+}
+
+/* Alert notification */
+
+
+* {
+    box-sizing: border-box;
+    /* direction: rtl; */
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .alert_modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999999999999999;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri;
+    font-weight: 900;
+  }
+
+  .alert_container {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    animation: 0.5s 1 alert_container_animation;
+    -webkit-animation: 35s 1 alert_container_animation;
+  }
+
+  @media (min-width: 600px) {
+    .alert_container {
+      width: 350px;
+    }
+  }
+
+  @keyframes alert_container_animation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    1% {
+      transform: scale(1.1);
+    }
+
+    2% {
+      transform: scale(1);
+    }
+  }
+
+  @-webkit-keyframes alert_container_animation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    1% {
+      transform: scale(1.1);
+    }
+
+    2% {
+      transform: scale(1);
+    }
+  }
+
+  .alert_heading {
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+  }
+
+  .alert_details {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .alert_details h2 {
+    font-size: 22px;
+  }
+
+  .alert_details p {
+    font-size: 18px;
+    color: #525252;
+    line-height: 1.5em;
+    margin-top: 5px;
+  }
+
+  .alert_footer {
+    background-color: #8001FF;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .alert_footer span {
+    color: #E3E3E3;
+    cursor: pointer;
+    width: 100vh;
+  }
