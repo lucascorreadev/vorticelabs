@@ -342,12 +342,12 @@
         <form action="" method="post" class="space-y-3 lg:pt-4 lg:space-y-4">
           <input type="text" placeholder="Nome" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
           <input type="text" placeholder="Email" class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" id="email-field" />
-          <input type="text" placeholder="Telefone celular" onkeypress="mask(this)" id="tel-field"
+          <input type="text" placeholder="Telefone celular" onkeypress="mask(this)" id="tel-field" maxlength="15"
             class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" />
           <textarea id="message" rows="5" style="resize: none"
             class="w-full rounded-lg border border-[#8001FF] p-2.5 text-sm" placeholder="Mensagem"></textarea>
           <div class="flex justify-end my-6 2xl:pt-6">
-            <button class="h-[2.5rem] w-[12rem] rounded-lg bg-[#8001FF] text-white" onclick="showSuccess()">
+            <button class="h-[2.5rem] w-[12rem] rounded-lg bg-[#8001FF] text-white" onclick="validateFields()">
               Entrar em contato</button>
           </div>
         </form>

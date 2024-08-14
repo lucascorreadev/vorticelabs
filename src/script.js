@@ -1,3 +1,5 @@
+/* Contact Modal */
+
 function showDialog() {
     let dialog = document.getElementById('dialog');
     dialog.classList.remove('hidden');
@@ -17,26 +19,22 @@ function hideDialog() {
 /* Validations */
 
 function validateFields() {
-    event.preventDefault()
     let emailUser = document.getElementById("email-field").value;
     let celUser = document.getElementById("tel-field").value;
 
-    console.log(celUser.replace(/^\(\)\-$/, ''))
-    console.log(celUser.match(/^([14689][0-9]|2[12478]|3([1-5]|[7-8])|5([13-5])|7[193-7])9[0-9]{8}$/))
-    
+    if(validateEmail(emailUser) & validateTel(celUser)) {
+      showSuccess()
+    } else showError()
 }
 
 function validateTel(celular) {
-    celular =  celular.replace('/[^0-9]/', '');
-    return celular.match(/^([14689][0-9]|2[12478]|3([1-5]|[7-8])|5([13-5])|7[193-7])9[0-9]{8}$/);
+  const re = /^\(\d{2}\) \d{4,5}-\d{4}$/gi;
+  return re.test(celular);
 }
 
 function validateEmail(email) {
-    return String(email)
-      .toLowerCase()
-      .match(
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
+  const re = /\S+@\S+\.\S+/;
+  return re.test(email);
 }
 
 function mask(tel) { 
@@ -70,8 +68,6 @@ function showError() {
         })
     }
 }
-
-
 
 const New = {
     status: 'success',
@@ -138,18 +134,18 @@ const New = {
                 Ok
               </span>
                `;
-        alert_heading.style = ' background: linear-gradient(80deg, #FF6767, #B31F1F);';
+        alert_heading.style = ' background: linear-gradient(80deg, #a54cff, #8001FF); display: flex;justify-content: center;';
         document.querySelector('.alert_details > h2').style.color = '#B31F1F';
       }
       document.querySelector('.alert_footer .close').addEventListener('click', function () {
         alert.remove();
         modal.remove();
       })
-      document.querySelector('.alert_footer .accept').addEventListener('click', function () {
-        alert.remove();
-        modal.remove();
-      })
-      document.querySelector('.alert_footer .accept').onclick = accept;
+      // document.querySelector('.alert_footer .accept').addEventListener('click', function () {
+      //   alert.remove();
+      //   modal.remove();
+      // })
+      // document.querySelector('.alert_footer .accept').onclick = accept;
 
     }
 }
