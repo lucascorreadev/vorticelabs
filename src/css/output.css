@@ -1204,7 +1204,7 @@ video {
   align-items: center;
   justify-content: center;
   font-family: Calibri;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .alert_container {
@@ -1248,13 +1248,15 @@ video {
 
 .alert_details h2 {
   font-size: 22px;
+  font-family: Poppins;
 }
 
 .alert_details p {
-  font-size: 18px;
+  font-size: 15px;
   color: #525252;
   line-height: 1.5em;
   margin-top: 5px;
+  font-family: Poppins;
 }
 
 .alert_footer {
